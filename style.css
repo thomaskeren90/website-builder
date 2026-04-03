@@ -1,0 +1,227 @@
+/* ===== BASE ===== */
+body {
+  font-family: 'Rubik', sans-serif;
+  color: #333;
+}
+
+a {
+  color: #257BC1;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #1a5a8f;
+}
+
+/* ===== HEADER ===== */
+.header {
+  z-index: 999;
+  transition: box-shadow 0.3s;
+}
+
+.navbar {
+  padding: 0.75rem 0;
+}
+
+.navbar-brand {
+  font-size: 1.4rem;
+  color: #257BC1 !important;
+}
+
+.nav-link {
+  font-weight: 500;
+  padding: 0.5rem 1rem !important;
+}
+
+/* ===== HERO ===== */
+.hero-section {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0d1b2a 0%, #1b3a5c 50%, #257BC1 100%);
+  color: #fff;
+  padding-top: 80px;
+}
+
+.hero-section h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+}
+
+.hero-section .lead {
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  opacity: 0.9;
+}
+
+/* ===== IMPACT STRIP ===== */
+.impact-item {
+  padding: 1.5rem;
+}
+
+.impact-number {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #257BC1;
+}
+
+.impact-label {
+  font-size: 0.9rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ===== SECTION TITLES ===== */
+.section-title {
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: #257BC1;
+  border-radius: 2px;
+}
+
+/* ===== PROGRAM CARDS ===== */
+.program-card {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.program-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.4s;
+}
+
+.program-card:hover img {
+  transform: scale(1.05);
+}
+
+.program-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,0.8));
+  color: #fff;
+  padding: 2rem 1.5rem 1.5rem;
+}
+
+.program-overlay h5 {
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+}
+
+.program-overlay p {
+  font-size: 0.85rem;
+  margin: 0;
+  opacity: 0.85;
+}
+
+/* ===== TESTIMONIALS ===== */
+.testimonial-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.06);
+  margin: 0.5rem;
+}
+
+.testimonial-text {
+  font-style: italic;
+  color: #555;
+}
+
+/* ===== ABOUT ===== */
+.about-section img {
+  transition: transform 0.3s;
+}
+
+.about-section img:hover {
+  transform: translateY(-4px);
+}
+
+/* ===== CONTACT FORM ===== */
+.contact-form .form-control {
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.contact-form .form-control:focus {
+  border-color: #257BC1;
+  box-shadow: 0 0 0 3px rgba(37, 123, 193, 0.1);
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background: #0d1b2a;
+  color: #ccc;
+}
+
+.footer a {
+  color: #aaa;
+  transition: color 0.2s;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+.footer .social-links a {
+  color: #aaa;
+}
+
+.footer .social-links a:hover {
+  color: #257BC1;
+}
+
+/* ===== BUTTONS ===== */
+.btn-primary {
+  background-color: #257BC1;
+  border-color: #257BC1;
+  border-radius: 8px;
+  padding: 0.6rem 1.5rem;
+  font-weight: 500;
+}
+
+.btn-primary:hover {
+  background-color: #1a5a8f;
+  border-color: #1a5a8f;
+}
+
+.btn-outline-primary {
+  color: #257BC1;
+  border-color: #257BC1;
+  border-radius: 8px;
+}
+
+.btn-outline-primary:hover {
+  background-color: #257BC1;
+  color: #fff;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 80vh;
+  }
+
+  .impact-number {
+    font-size: 2rem;
+  }
+
+  .program-card img {
+    height: 220px;
+  }
+}

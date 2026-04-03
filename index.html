@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University Starter — Inspired by president.ac.id</title>
+
+  <!-- Fonts (same as the real site) -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Vendor libs -->
+  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Your main styles -->
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header id="header" class="header fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand fw-bold" href="#">
+          <i class="bi bi-mortarboard-fill text-primary me-2"></i>YourUni
+        </a>
+
+        <!-- Mobile toggle -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Nav links -->
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Academics</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Undergraduate</a></li>
+                <li><a class="dropdown-item" href="#">Graduate</a></li>
+                <li><a class="dropdown-item" href="#">Online Programs</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#testimonials">Alumni</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+          <!-- Search button (like the real site has) -->
+          <button class="btn btn-outline-primary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal">
+            <i class="bi bi-search"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Search Modal -->
+  <div class="modal fade" id="searchModal" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content p-4">
+        <div class="input-group input-group-lg">
+          <input type="text" class="form-control" placeholder="Search...">
+          <button class="btn btn-primary"><i class="bi bi-search"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="hero" class="hero-section d-flex align-items-center">
+    <div class="container text-center">
+      <h1 data-aos="fade-up">Welcome to Your University</h1>
+      <p class="lead mt-3" data-aos="fade-up" data-aos-delay="100">
+        Building tomorrow's leaders through excellence in education
+      </p>
+      <a href="#programs" class="btn btn-primary btn-lg mt-4" data-aos="fade-up" data-aos-delay="200">
+        Explore Programs <i class="bi bi-arrow-right ms-2"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== IMPACT STRIP ===== -->
+  <section class="impact-strip py-5 bg-light">
+    <div class="container">
+      <div class="row text-center g-4">
+        <div class="col-6 col-md-3" data-aos="fade-up">
+          <div class="impact-item">
+            <span class="impact-number" data-count="5000">0</span>
+            <span class="impact-label">Students</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="impact-item">
+            <span class="impact-number" data-count="200">0</span>
+            <span class="impact-label">Faculty</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="200">
+          <div class="impact-item">
+            <span class="impact-number" data-count="30">0</span>
+            <span class="impact-label">Programs</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="impact-item">
+            <span class="impact-number" data-count="95">0</span>
+            <span class="impact-label">% Employed</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROGRAMS / IMAGE SLIDER ===== -->
+  <section id="programs" class="programs-section py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-5" data-aos="fade-up">Our Programs</h2>
+
+      <!-- Swiper carousel (same lib as the real site) -->
+      <div class="swiper programsSwiper" data-aos="fade-up">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <div class="program-card">
+              <img src="https://picsum.photos/seed/eng/600/400" alt="Engineering" class="img-fluid">
+              <div class="program-overlay">
+                <h5>Engineering</h5>
+                <p>Build the future with cutting-edge technology</p>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="swiper-slide">
+            <div class="program-card">
+              <img src="https://picsum.photos/seed/biz/600/400" alt="Business" class="img-fluid">
+              <div class="program-overlay">
+                <h5>Business</h5>
+                <p>Lead with strategy and innovation</p>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="swiper-slide">
+            <div class="program-card">
+              <img src="https://picsum.photos/seed/arts/600/400" alt="Arts" class="img-fluid">
+              <div class="program-overlay">
+                <h5>Arts & Design</h5>
+                <p>Express creativity at the highest level</p>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 4 -->
+          <div class="swiper-slide">
+            <div class="program-card">
+              <img src="https://picsum.photos/seed/med/600/400" alt="Medicine" class="img-fluid">
+              <div class="program-overlay">
+                <h5>Medicine</h5>
+                <p>Save lives with world-class training</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ALUMNI / TESTIMONIALS ===== -->
+  <section id="testimonials" class="testimonials-section py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title text-center mb-5" data-aos="fade-up">Notable Alumni</h2>
+
+      <div class="swiper testimonialSwiper" data-aos="fade-up">
+        <div class="swiper-wrapper">
+          <!-- Alumni 1 -->
+          <div class="swiper-slide">
+            <div class="testimonial-card text-center p-4">
+              <img src="https://i.pravatar.cc/150?img=11" alt="Alumni" class="rounded-circle mb-3" width="80" height="80">
+              <h5>Jane Doe</h5>
+              <p class="text-muted small mb-2">Class of 2018 — Computer Science</p>
+              <p class="testimonial-text">"This university gave me the foundation to build a career I love. The professors genuinely care."</p>
+            </div>
+          </div>
+          <!-- Alumni 2 -->
+          <div class="swiper-slide">
+            <div class="testimonial-card text-center p-4">
+              <img src="https://i.pravatar.cc/150?img=32" alt="Alumni" class="rounded-circle mb-3" width="80" height="80">
+              <h5>John Smith</h5>
+              <p class="text-muted small mb-2">Class of 2016 — Business</p>
+              <p class="testimonial-text">"The network I built here opened doors I never imagined. Best decision of my life."</p>
+            </div>
+          </div>
+          <!-- Alumni 3 -->
+          <div class="swiper-slide">
+            <div class="testimonial-card text-center p-4">
+              <img src="https://i.pravatar.cc/150?img=5" alt="Alumni" class="rounded-circle mb-3" width="80" height="80">
+              <h5>Sarah Lee</h5>
+              <p class="text-muted small mb-2">Class of 2020 — Design</p>
+              <p class="testimonial-text">"Hands-on projects and real-world experience prepared me for the industry from day one."</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="about-section py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6" data-aos="fade-right">
+          <img src="https://picsum.photos/seed/campus/600/400" alt="Campus" class="img-fluid rounded-4 shadow">
+        </div>
+        <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-left">
+          <h2 class="section-title">About Us</h2>
+          <p>Founded with a vision to provide world-class education, we combine academic rigor with practical experience. Our graduates are leaders in their fields across the globe.</p>
+          <ul class="list-unstyled mt-3">
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Internationally accredited programs</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Industry partnerships & internships</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Modern campus & facilities</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Scholarship opportunities</li>
+          </ul>
+          <a href="#" class="btn btn-primary mt-3">Learn More <i class="bi bi-arrow-right ms-1"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="contact-section py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title text-center mb-5" data-aos="fade-up">Get in Touch</h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-8" data-aos="fade-up">
+          <form class="contact-form p-4 p-md-5 bg-white rounded-4 shadow-sm">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <input type="text" class="form-control form-control-lg" placeholder="Your Name">
+              </div>
+              <div class="col-md-6">
+                <input type="email" class="form-control form-control-lg" placeholder="Your Email">
+              </div>
+              <div class="col-12">
+                <input type="text" class="form-control form-control-lg" placeholder="Subject">
+              </div>
+              <div class="col-12">
+                <textarea class="form-control form-control-lg" rows="5" placeholder="Your Message"></textarea>
+              </div>
+              <div class="col-12 text-center">
+                <button type="submit" class="btn btn-primary btn-lg px-5">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <h5 class="fw-bold"><i class="bi bi-mortarboard-fill text-primary me-2"></i>YourUni</h5>
+          <p class="text-muted">Building tomorrow's leaders through excellence in education, research, and community engagement.</p>
+          <div class="social-links mt-3">
+            <a href="#" class="me-3"><i class="bi bi-facebook fs-5"></i></a>
+            <a href="#" class="me-3"><i class="bi bi-instagram fs-5"></i></a>
+            <a href="#" class="me-3"><i class="bi bi-youtube fs-5"></i></a>
+            <a href="#" class="me-3"><i class="bi bi-linkedin fs-5"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4">
+          <h6 class="fw-bold mb-3">Quick Links</h6>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#">Home</a></li>
+            <li class="mb-2"><a href="#">Programs</a></li>
+            <li class="mb-2"><a href="#">Admissions</a></li>
+            <li class="mb-2"><a href="#">Campus</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-4">
+          <h6 class="fw-bold mb-3">Resources</h6>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#">Library</a></li>
+            <li class="mb-2"><a href="#">Career Center</a></li>
+            <li class="mb-2"><a href="#">Student Portal</a></li>
+            <li class="mb-2"><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-4">
+          <h6 class="fw-bold mb-3">Contact</h6>
+          <p class="text-muted mb-1"><i class="bi bi-geo-alt me-2"></i>123 University Ave, City</p>
+          <p class="text-muted mb-1"><i class="bi bi-envelope me-2"></i>info@youruni.ac.id</p>
+          <p class="text-muted mb-1"><i class="bi bi-telephone me-2"></i>+62 21 1234 5678</p>
+        </div>
+      </div>
+      <hr class="my-4">
+      <p class="text-center text-muted mb-0">&copy; 2026 YourUni. All rights reserved. Built with ❤️ and Bootstrap.</p>
+    </div>
+  </footer>
+
+  <!-- ===== SCRIPTS ===== -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+  <script>
+    // Initialize AOS (scroll animations)
+    AOS.init({ duration: 800, once: true });
+
+    // Programs carousel
+    new Swiper('.programsSwiper', {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      autoplay: { delay: 3000 },
+      pagination: { el: '.programsSwiper .swiper-pagination', clickable: true },
+      breakpoints: {
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 }
+      }
+    });
+
+    // Testimonials carousel
+    new Swiper('.testimonialSwiper', {
+      slidesPerView: 1,
+      loop: true,
+      autoplay: { delay: 4000 },
+      pagination: { el: '.testimonialSwiper .swiper-pagination', clickable: true },
+      breakpoints: {
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 }
+      }
+    });
+
+    // Animated counter (simplified PureCounter-like)
+    const counters = document.querySelectorAll('.impact-number');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const target = parseInt(el.dataset.count);
+          let current = 0;
+          const step = Math.ceil(target / 60);
+          const timer = setInterval(() => {
+            current += step;
+            if (current >= target) { current = target; clearInterval(timer); }
+            el.textContent = current.toLocaleString();
+          }, 25);
+          observer.unobserve(el);
+        }
+      });
+    }, { threshold: 0.5 });
+    counters.forEach(c => observer.observe(c));
+  </script>
+
+</body>
+</html>
